@@ -1,0 +1,77 @@
+.cards-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gapSectionGoods;
+}
+.card-goods {
+  flex-basis: calc((100% - 2 * $gapSectionGoods) / 3);
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f,
+      1px 4px 6px #00000029;
+    transition: box-shadow $transition;
+  }
+  .overlay,
+  &__overlay {
+    background-color: $fontColorAction;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.48px;
+    color: $backgroundColorPrimary;
+    position: absolute;
+    padding: 49px 45px 49px 24px;
+    transform: translateY(40%);
+    transition: transform $transition;
+    z-index: 0;
+  }
+  &:hover &__overlay {
+    transform: translateY(-101.5%);
+    transition: transform $transition;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.96px;
+    padding: 20px 24px 4px;
+    z-index: 1;
+    position: relative;
+    background-color: $backgroundColorPrimary;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+    color: $fontColorSecondary;
+    padding: 0 24px 20px;
+    z-index: 1;
+    position: relative;
+    background-color: $backgroundColorPrimary;
+  }
+}
+.filter-item__button {
+  padding: 6px 22px;
+  background-color: $backgroundColorEmployees;
+  border-color: $backgroundColorEmployees;
+  color: $fontColorPrimary;
+  font-family: $fontPrimary;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  justify-content: center;
+  border: none;
+}

@@ -1,0 +1,163 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  &--hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.window {
+  width: 528px;
+  height: 581px;
+  background-color: $backgroundColorPrimary;
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
+    0px 2px 1px #00000033;
+  border-radius: 4px;
+  position: relative;
+  padding: 40px;
+}
+
+.button-close {
+  outline: 1px solid #0000001a;
+  border: #0000001a;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  &__icon {
+    fill: #000000;
+    stroke: #0000001a;
+    stroke-width: 1px solid;
+    background-color: $backgroundColorPrimary;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 0;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
+  &__header::first-letter {
+    text-transform: uppercase;
+  }
+  &__label {
+    text-transform: capitalize;
+    font-size: 12px;
+    color: $fontColorSecondary;
+    line-height: 1.17;
+    letter-spacing: 0.16;
+    margin-bottom: 4px;
+    position: relative;
+  }
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 42px;
+    margin-bottom: 10px;
+  }
+  &__icon:focus,
+  &__input:focus,
+  &__textarea:focus {
+    border: 1px solid $fontColorAction;
+    fill: $fontColorAction;
+    outline: none;
+    transition: border $transition, fill $transition;
+  }
+  &__input:focus + &__icon {
+    fill: $fontColorAction;
+    transition: fill $transition;
+  }
+  &__icon {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    fill: $fontColorPrimary;
+  }
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    font-size: 12px;
+    padding: 12px 16px;
+    line-height: 1.17;
+    letter-spacing: 0.16;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  &__textarea::placeholder {
+    color: #75757580;
+  }
+  &__button {
+    padding: 10px 76px;
+    display: block;
+    max-width: 250px;
+    align-self: center;
+  }
+}
+.box-rules {
+  appearance: none;
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: 30px;
+    margin-left: 7px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.48px;
+    color: $fontColorSecondary;
+  }
+
+  &__label::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    top: 3px;
+    left: -20px;
+    border: 1px solid $fontColorPrimary;
+  }
+  &:checked + &__label::before {
+    background-color: $fontColorAction;
+    background-image: url("../images/checkmark.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid $fontColorAction;
+    fill: $backgroundColorPrimary;
+  }
+}
+.link {
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.48px;
+  color: $fontColorAction;
+}

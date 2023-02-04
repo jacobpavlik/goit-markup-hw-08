@@ -1,0 +1,34 @@
+.section-team {
+  background-color: $backgroundColorEmployees;
+}
+.cards-media {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px 30px;
+
+  &__icon {
+    fill: $iconColorNormal;
+  }
+
+  &__card {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50px;
+  }
+  &__card:active,
+  &__card:focus,
+  &__card:hover,
+  &__icon:active,
+  &__icon:focus,
+  &__icon:hover {
+    background-color: $fontColorAction;
+    fill: $backgroundColorPrimary;
+    cursor: pointer;
+    transition: background-color $transition, fill $transition,
+      cursor $transition;
+  }
+  &__card:hover &__icon {
+    fill: $backgroundColorPrimary;
+  }
+}

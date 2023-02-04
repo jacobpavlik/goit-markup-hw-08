@@ -1,0 +1,80 @@
+.footer {
+  padding: 60px 0;
+  background-color: $backgroundColorSecondary;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.contact {
+  font-size: 14px;
+  font-style: normal;
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: capitalize;
+    color: $backgroundColorPrimary;
+  }
+  &__text::first-letter {
+    text-transform: lowercase;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #ffffff99;
+  }
+}
+.footer-box {
+  margin-top: 12px;
+  &__title {
+    font-size: 14px;
+    font-weight: 700px;
+    letter-spacing: 0.48px;
+    line-height: 1.17;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__title {
+    color: $backgroundColorPrimary;
+  }
+
+  &__icon {
+    fill: $backgroundColorPrimary;
+  }
+  &__list {
+    display: flex;
+    margin-top: 0;
+  }
+  &__item {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50px;
+    background: #ffffff1a;
+    margin-right: 10px;
+  }
+  &__item:active,
+  &__item:focus,
+  &__item:hover {
+    background-color: $fontColorAction;
+    cursor: pointer;
+    transition: background-color $transition, cursor $transition;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__input {
+    padding: 15px 150px 15px 16px;
+    border: 1px solid #ffffff4d;
+    border-radius: 4px;
+    background-color: $backgroundColorSecondary;
+    margin-right: 12px;
+    color: $backgroundColorEmployees;
+    outline: none;
+  }
+}

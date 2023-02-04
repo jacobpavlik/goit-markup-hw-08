@@ -1,0 +1,26 @@
+.button__section-slogan {
+  padding: 10px 41px 10px 42px;
+}
+.section-slogan {
+  height: 600px;
+  background-image: url("../images/img-overlay.png"),
+    url("../images/img-bg.png");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: center;
+  text-align: center;
+
+  &__title {
+    color: $backgroundColorPrimary;
+    font-size: 44px;
+    text-transform: uppercase;
+    line-height: 1.37;
+    letter-spacing: 0.96px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &--format {
+    padding-top: 106px;
+    width: 696px;
+  }
+}

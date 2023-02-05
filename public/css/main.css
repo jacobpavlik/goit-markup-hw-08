@@ -20,7 +20,6 @@ body {
 .container {
   width: 100%;
   max-width: 480px;
-  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -36,6 +35,11 @@ body {
 .section {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 .section__info {
   padding-bottom: 0;
 }
@@ -47,17 +51,14 @@ body {
   text-align: center;
   padding-bottom: 30px;
 }
-.section__header::first-letter {
-  text-transform: uppercase;
-}
 @media screen and (min-width: 1200px) {
   .section__header {
-    padding: 94px 0;
-  }
-  .section__header__header {
     font-size: 36px;
     padding-bottom: 50px;
   }
+}
+.section__header::first-letter {
+  text-transform: uppercase;
 }
 
 .button {
@@ -248,25 +249,46 @@ body {
 }
 
 .section-slogan {
-  height: 600px;
   background-image: url("../images/img-overlay.png"), url("../images/img-bg.png");
   background-repeat: no-repeat;
-  background-size: 1600px;
+  background-size: cover;
   background-position: center;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .section-slogan {
+    background-size: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-slogan {
+    height: 600px;
+    background-size: 1600px;
+  }
+}
 .section-slogan__title {
   color: #ffffff;
-  font-size: 44px;
+  font-size: 26px;
   text-transform: uppercase;
-  line-height: 1.37;
+  line-height: 1.62;
   letter-spacing: 0.96px;
   text-align: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .section-slogan__title {
+    font-size: 44px;
+    line-height: 1.37;
+  }
+}
 .section-slogan--format {
-  padding-top: 106px;
-  width: 696px;
+  padding-top: 58px;
+}
+@media screen and (min-width: 1200px) {
+  .section-slogan--format {
+    padding-top: 106px;
+    width: 696px;
+  }
 }
 
 .card {

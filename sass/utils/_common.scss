@@ -16,7 +16,6 @@ body {
 .container {
   width: 100%;
   max-width: 480px;
-  margin: 0 auto;
 
   @include tablet {
     max-width: 768px;
@@ -27,6 +26,12 @@ body {
 }
 .section {
   padding: 60px 0;
+
+  // TABLET tak jak mobile
+
+  @include desktop {
+    padding: 94px 0;
+  }
 
   &__info {
     padding-bottom: 0;
@@ -40,33 +45,26 @@ body {
     text-align: center;
     padding-bottom: 30px;
 
+    @include desktop {
+      font-size: 36px;
+      // font-weight: 700px;
+      // line-height: 1.17;
+      // letter-spacing: 0.48px;
+      // text-align: center;
+      padding-bottom: 50px;
+    }
+
+    // &::first-letter {
+    //   text-transform: uppercase;
+    // }
+
     &::first-letter {
       text-transform: uppercase;
     }
-    // zostawiam, żeby się nie zastanawiać czy przypadkiem nie przegapiłem - skasować na końcu
-    @include tablet {
-    }
-    @include desktop {
-      padding: 94px 0;
-
-      // &__info {
-      //   padding-bottom: 0;
-      // }
-
-      &__header {
-        font-size: 36px;
-        // font-weight: 700px;
-        // line-height: 1.17;
-        // letter-spacing: 0.48px;
-        // text-align: center;
-        padding-bottom: 50px;
-
-        // &::first-letter {
-        //   text-transform: uppercase;
-        // }
-      }
-    }
   }
+  // &__info {
+  //   padding-bottom: 0;
+  // }
 }
 
 .button {

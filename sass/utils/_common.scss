@@ -14,26 +14,57 @@ body {
   color: $fontColorPrimary, #212121;
 }
 .container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &__info {
     padding-bottom: 0;
   }
 
   &__header {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700px;
     line-height: 1.17;
     letter-spacing: 0.48px;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     &::first-letter {
       text-transform: uppercase;
+    }
+    // zostawiam, żeby się nie zastanawiać czy przypadkiem nie przegapiłem - skasować na końcu
+    @include tablet {
+    }
+    @include desktop {
+      padding: 94px 0;
+
+      // &__info {
+      //   padding-bottom: 0;
+      // }
+
+      &__header {
+        font-size: 36px;
+        // font-weight: 700px;
+        // line-height: 1.17;
+        // letter-spacing: 0.48px;
+        // text-align: center;
+        padding-bottom: 50px;
+
+        // &::first-letter {
+        //   text-transform: uppercase;
+        // }
+      }
     }
   }
 }

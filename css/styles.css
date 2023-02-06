@@ -45,7 +45,6 @@ body {
 }
 /*BEM logo end*/
 /*BEM header start*/
-.section-work,
 .section-goods {
   background-color: var(--background-color-primary, #ffffff);
 }

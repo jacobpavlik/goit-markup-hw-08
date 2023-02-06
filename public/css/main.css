@@ -44,6 +44,14 @@ body {
 .section__info {
   padding-bottom: 0;
 }
+.section--mobile {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--mobile {
+    display: all;
+  }
+}
 .section__header {
   font-size: 28px;
   font-weight: 700px;
@@ -434,6 +442,12 @@ body {
 .card-work {
   position: relative;
   height: 294px;
+}
+@media screen and (min-width: 1200px) {
+  .card-work {
+    position: relative;
+    height: 294px;
+  }
 }
 .card-work__label {
   font-size: 14px;

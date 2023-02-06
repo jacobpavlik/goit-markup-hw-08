@@ -37,7 +37,15 @@ body {
   &__info {
     padding-bottom: 0;
   }
+  &--mobile {
+    display: none;
+    // visibility: hidden;
 
+    @include desktop {
+      display: all;
+      // visibility: visible;
+    }
+  }
   &__header {
     font-size: 28px;
     font-weight: 700px;

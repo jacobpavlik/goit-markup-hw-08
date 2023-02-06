@@ -2,6 +2,11 @@
   position: relative;
   height: 294px;
 
+  @include desktop {
+    position: relative;
+    height: 294px;
+  }
+
   &__label {
     font-size: 14px;
     font-weight: 700px;

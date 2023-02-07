@@ -3,8 +3,12 @@
 }
 .cards-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 30px 30px;
+
+  @include desktop {
+    justify-content: space-between;
+  }
 
   &__icon {
     fill: $iconColorNormal;
@@ -15,7 +19,21 @@
     height: 44px;
     padding: 12px;
     border-radius: 50px;
+    margin-bottom: 24px;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
+  //tylko dla MOBILE
+  &__card:not(:last-child) {
+    margin-right: 10px;
+
+    @include desktop {
+      margin-right: 0;
+    }
+  }
+
   &__card:active,
   &__card:focus,
   &__card:hover,
@@ -30,5 +48,11 @@
   }
   &__card:hover &__icon {
     fill: $backgroundColorPrimary;
+  }
+  @include desktop {
+    &__img {
+      width: 270px;
+      height: 260px;
+    }
   }
 }

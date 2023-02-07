@@ -172,11 +172,33 @@
           <ul class="cards">
             <li class="card card--shadow">
               <picture>
-                <source media="screen and (max-width: 767px)" srcset="" />
+                <source
+                  media="screen and (max-width: 767px)"
+                  srcset="
+                    images/workerOneMobile1x.jpg 400w,
+                    images/workerOneMobile2x.jpg 800w
+                  "
+                  sizes="(min-width:480px) 480px, 100vw"
+                />
+                <source
+                  media="screen and (max-width: 1199px)"
+                  srcset="
+                    images/workerOneTablet1x.jpg 1200w,
+                    images/workerOneTablet2x.jpg 2400w
+                  "
+                  sizes="(min-width:768px) 768px, 100vw"
+                />
+                <source
+                  srcset="
+                    images/workerOneDesktop1x.jpg 2400w,
+                    images/workerOneDesktop2x.jpg 4800w
+                  "
+                  sizes="(min-width:1200px) 1200px, 100vw"
+                />
                 <img
                   class="card__img"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                   src="images/bearded-man.jpg"
                   alt="uśmiechnięty mężczyzna"
                 />
@@ -216,8 +238,8 @@
             </li>
             <li class="card card--shadow">
               <img
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 src="images/picture-of-a-woman.jpg"
                 alt="uśmiechnięta kobieta"
               />
@@ -256,8 +278,8 @@
             </li>
             <li class="card card--shadow">
               <img
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 src="images/smiling-man.jpg"
                 alt="młody mężczyzna"
               />
@@ -296,8 +318,8 @@
             </li>
             <li class="card card--shadow">
               <img
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 src="images/man-in-a-shirt.jpg"
                 alt="brodaty mężczyzna"
               />

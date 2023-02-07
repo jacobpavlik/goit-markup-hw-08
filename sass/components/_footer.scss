@@ -4,7 +4,19 @@
 }
 .footer-flex {
   display: flex;
-  justify-content: space-between;
+  // flex-direction: column;
+  // justify-items: center;
+  // justify-content: center;
+  align-items: center;
+  text-align: center;
+  // justify-content: space-between;
+
+  @include desktop {
+    // display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
 }
 .contact {
   font-size: 14px;
@@ -26,7 +38,12 @@
   }
 }
 .footer-box {
-  margin-top: 12px;
+  margin-top: 60px;
+
+  @include desktop {
+    margin-top: 12px;
+  }
+
   &__title {
     font-size: 14px;
     font-weight: 700px;
@@ -64,9 +81,15 @@
     transition: background-color $transition, cursor $transition;
   }
   &__form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &__input {
     padding: 15px 150px 15px 16px;

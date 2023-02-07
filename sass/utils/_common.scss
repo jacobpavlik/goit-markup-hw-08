@@ -35,7 +35,7 @@ body {
     // visibility: hidden;
 
     @include desktop {
-      display: all;
+      display: block;
       // visibility: visible;
     }
   }

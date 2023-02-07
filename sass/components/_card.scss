@@ -22,6 +22,12 @@
       margin-bottom: 30px;
     }
   }
+  &__img {
+    @include desktop {
+      width: 270px;
+      height: 260px;
+    }
+  }
   &__header {
     font-size: 14px;
     font-weight: 700px;

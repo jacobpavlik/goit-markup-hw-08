@@ -49,10 +49,4 @@
   &__card:hover &__icon {
     fill: $backgroundColorPrimary;
   }
-  @include desktop {
-    &__img {
-      width: 270px;
-      height: 260px;
-    }
-  }
 }

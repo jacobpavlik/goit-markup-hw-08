@@ -530,9 +530,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -541,6 +544,8 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: left;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -628,6 +633,12 @@ body {
   margin-right: 12px;
   color: #f5f4fa;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer-box__input {
+    margin: 0;
+    margin-right: 12px;
+  }
 }
 
 .modal {

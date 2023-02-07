@@ -3,19 +3,17 @@
   background-color: $backgroundColorSecondary;
 }
 .footer-flex {
-  display: flex;
-  // flex-direction: column;
-  // justify-items: center;
-  // justify-content: center;
-  align-items: center;
-  text-align: center;
-  // justify-content: space-between;
+  display: flex; //dodane
+  flex-wrap: wrap; //dodane
+  gap: 30px; //dodane
+  justify-content: center; //zmienione
+  text-align: center; //dodane
 
   @include desktop {
     // display: flex;
-    // flex-direction: column;
     justify-content: space-between;
-    text-align: left;
+    text-align: left; //dodane przez MOBILE
+    flex-wrap: nowrap; //dodane przez MOBILE
   }
 }
 .contact {
@@ -96,8 +94,15 @@
     border: 1px solid #ffffff4d;
     border-radius: 4px;
     background-color: $backgroundColorSecondary;
-    margin-right: 12px;
+    margin-right: 12px; //usunięto w MOBILE
     color: $backgroundColorEmployees;
     outline: none;
+    // margin: 20px 15px; //dodano MOBILE
+    // width: 100%;
+
+    @include desktop {
+      margin: 0; //dodano przez MOBILE
+      margin-right: 12px; //przesunięte z MOBILE
+    }
   }
 }

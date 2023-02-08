@@ -58,6 +58,10 @@
     font-weight: 700;
     font-size: 20px;
     text-align: center;
+    line-height: 1.5;
+    @include desktop {
+      line-height: 1.17;
+    }
   }
   &__header::first-letter {
     text-transform: uppercase;
@@ -130,10 +134,14 @@
     align-self: center;
     margin-bottom: 30px;
     margin-left: 7px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.48px;
     color: $fontColorSecondary;
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__label::before {
@@ -143,9 +151,11 @@
     width: 16px;
     height: 15px;
     border-radius: 2px;
-    top: 3px;
     left: -20px;
     border: 1px solid $fontColorPrimary;
+    @include desktop {
+      top: 3px;
+    }
   }
   &:checked + &__label::before {
     background-color: $fontColorAction;
@@ -160,8 +170,12 @@
 .link {
   text-decoration: underline;
   text-transform: capitalize;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   color: $fontColorAction;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

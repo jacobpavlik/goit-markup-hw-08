@@ -119,8 +119,9 @@
   @include desktop {
   }
 }
-.testflexwew {
-}
+// .testflexwew {
+
+// }
 .testflexwew:not(:last-child) {
   @include desktop {
     padding-right: 70px;

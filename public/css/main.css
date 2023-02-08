@@ -90,6 +90,12 @@ body {
 }
 .button__footer {
   padding: 10px 28px 10px 42px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .button__footer {
+    margin-top: 0;
+  }
 }
 .button__icon {
   vertical-align: middle;
@@ -532,11 +538,17 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-flex {
@@ -544,8 +556,6 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: left;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
 }
 
@@ -566,6 +576,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  display: block;
 }
 
 .footer-box {
@@ -630,14 +641,29 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
   border-radius: 4px;
   background-color: #2f303a;
-  margin-right: 12px;
   color: #f5f4fa;
   outline: none;
+  width: 85%;
+  max-width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .footer-box__input {
-    margin: 0;
+    padding: 15px 150px 15px 16px;
     margin-right: 12px;
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testflexzew {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testflexwew:not(:last-child) {
+    padding-right: 70px;
   }
 }
 

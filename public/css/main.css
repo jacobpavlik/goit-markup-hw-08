@@ -178,11 +178,6 @@ body {
   }
 }
 
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -247,13 +242,25 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-left: 8px;
+  text-transform: capitalize;
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
+.mobile-menu .nav__tel {
+  font-size: 34px;
   color: #2196f3;
-  text-decoration: none;
+  margin-top: 270px;
+  margin-bottom: 32px;
+}
+
+.mobile-menu .nav__email {
+  margin-bottom: 32px;
+}
+
+.mobile-menu .nav__media {
+  color: #2196f3;
+  font-size: 18px;
+  line-height: 1.22;
 }
 
 .logo {
@@ -344,6 +351,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 40px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+  }
 }
 .nav__link--active {
   color: #2196f3;
@@ -385,6 +401,12 @@ body {
 .nav__link--color {
   color: #757575;
   text-transform: lowercase;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: 14px;
+  }
 }
 
 .button__section-slogan {

@@ -32,6 +32,7 @@
   &__item-header:not(:last-child) {
     margin-left: 315px;
   }
+
   //DEL->sprawdzić czy działa - jak cała strona będzie!! Dopiero potem skasować
   // & > .nav__item-header:not(:last-child) {
   //   margin-right: 50px;
@@ -62,6 +63,14 @@
     color: $fontColorPrimary;
     display: flex;
     align-items: center;
+    font-size: 40px;
+    line-height: 1.17;
+
+    @include tablet {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.14;
+    }
 
     //
     &--active {
@@ -105,6 +114,10 @@
     &--color {
       color: $fontColorSecondary;
       text-transform: lowercase;
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 14px;
     }
   }
 }

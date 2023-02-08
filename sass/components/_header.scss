@@ -1,23 +1,31 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  align-items: center;
+  padding: 16px 15px;
   position: relative;
   background-color: $backgroundColorPrimary;
   border-bottom: 1px solid #ececec;
+  flex-direction: row-reverse;
+
+  @include desktop {
+    padding: 24px 0;
+  }
 }
 .d-flex {
   display: flex;
 }
 .nav {
-  display: flex;
+  display: none;
   align-items: center;
   margin: 0 auto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   text-transform: capitalize;
-
+  @include tablet {
+    display: flex;
+  }
   &__item-header:not(:last-child) {
     margin-right: 50px;
   }
@@ -77,9 +85,13 @@
       content: "";
       width: 53px;
       min-height: 4px;
-      background-color: $fontColorAction;
+      background-color: transparent;
       position: absolute;
       bottom: 0;
+
+      @include tablet {
+        background-color: $fontColorAction;
+      }
     }
     &--active-portfolio::after {
       display: block;

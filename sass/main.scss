@@ -1,6 +1,7 @@
 @use "./utils/mixins" as *;
 @import "./utils/vars";
 @import "./utils/common";
+@import "./components/mobile-menu";
 @import "./components/logo";
 @import "./components/header";
 @import "./components/slogan";

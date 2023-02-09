@@ -238,6 +238,10 @@ body {
   color: #212121;
 }
 
+.menu-container .menu-toggle:hover {
+  color: #2196f3;
+}
+
 .mobile-menu {
   padding: 0;
   margin: 0;

@@ -102,6 +102,9 @@
   right: 16px;
   color: $fontColorPrimary;
 }
+.menu-container .menu-toggle:hover {
+  color: $fontColorAction;
+}
 
 .mobile-menu {
   padding: 0;
@@ -111,24 +114,13 @@
   text-transform: capitalize;
 }
 
-// .mobile-menu .link {
-//   display: block;
-//   padding: 10px;
-//   color: $fontColorAction;
-//   text-decoration: none;
-// }
 .mobile-menu .nav__tel {
   font-size: 34px;
   color: $fontColorAction;
   margin-top: 270px;
   margin-bottom: 32px;
 }
-//poniżej chyba niepotrzebne
-//.mobile-menu .nav__email {
-// text-transform: capitalize;
-//   padding-left: 8px;
-//   margin-bottom: 32px;
-//}
+
 .mobile-menu .nav__media {
   color: $fontColorAction;
   font-size: 18px;

@@ -134,15 +134,17 @@
   font-size: 18px;
   line-height: 1.22;
   border-left: 1px solid rgba(33, 33, 33, 0.2); //poprawić
-  //   padding: 0 10px; //poprawić
-  .nav__media:not(:first-child) {
-    border-left: 1px solid #21212133; //nie działa
-  }
-  .nav__media:not(:first-child) {
-    padding: 0 10px; //nie działa
-  }
+  padding: 0 10px; //poprawić
 }
 
 .mobile-menu .nav__item {
   margin-bottom: 32px;
+}
+.mobile-menu .nav__media--borderless {
+  border-left: none;
+  padding: 0;
+  padding-right: 10px;
+}
+.mobile-menu .nav__email {
+  margin-bottom: 64px;
 }

@@ -791,6 +791,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer-box__item {
   width: 44px;
@@ -798,6 +801,8 @@ body {
   padding: 12px;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.1019607843);
+}
+.footer-box__item:not(:last-child) {
   margin-right: 10px;
 }
 .footer-box__item:active, .footer-box__item:focus, .footer-box__item:hover {

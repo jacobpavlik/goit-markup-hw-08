@@ -70,6 +70,7 @@
   &__list {
     display: flex;
     margin-top: 0;
+    justify-content: center;
   }
   &__item {
     width: 44px;
@@ -77,6 +78,8 @@
     padding: 12px;
     border-radius: 50px;
     background: #ffffff1a;
+  }
+  &__item:not(:last-child) {
     margin-right: 10px;
   }
   &__item:active,

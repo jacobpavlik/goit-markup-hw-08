@@ -131,7 +131,8 @@ body {
     fill: $iconColorNormal;
     padding: 16px 32px;
     border-radius: 4px;
-
+    @include tablet {
+    }
     @include desktop {
       outline: 1px solid $iconColorNormal;
       fill: $iconColorNormal;

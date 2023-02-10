@@ -4,7 +4,7 @@
 }
 .footer-flex {
   display: flex;
-  // flex-direction: column;
+  // flex-direction: column; //flex-wrap lepsze, bo ustawia od razu wszystko
   flex-wrap: wrap; //dodane
   // gap: 30px; //dodane
   justify-content: center; //zmienione

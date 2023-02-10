@@ -21,8 +21,6 @@ body {
 .section {
   padding: 60px 0;
 
-  // TABLET tak jak mobile
-
   @include desktop {
     padding: 94px 0;
   }
@@ -30,6 +28,7 @@ body {
   &__info {
     padding-bottom: 0;
   }
+
   &--mobile {
     display: none;
 
@@ -47,10 +46,6 @@ body {
 
     @include desktop {
       font-size: 36px;
-      // font-weight: 700px;
-      // line-height: 1.17;
-      // letter-spacing: 0.48px;
-      // text-align: center;
       padding-bottom: 50px;
     }
 
@@ -108,19 +103,11 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 
-  @include tablet {
-  }
-
   @include desktop {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
     flex-wrap: nowrap;
   }
 
   & > .card:not(:last-child) {
-    // margin-right: 30px;
-
     @include desktop {
       margin-right: 30px;
     }
@@ -131,14 +118,6 @@ body {
     fill: $iconColorNormal;
     padding: 16px 32px;
     border-radius: 4px;
-    @include tablet {
-    }
-    @include desktop {
-      outline: 1px solid $iconColorNormal;
-      fill: $iconColorNormal;
-      padding: 16px 32px;
-      border-radius: 4px;
-    }
   }
   &__client-icon:active,
   &__client-icon:focus,
@@ -147,29 +126,12 @@ body {
     fill: $fontColorAction;
     cursor: pointer;
     transition: outline-color $transition, fill $transition, cursor $transition;
-
-    @include desktop {
-      outline-color: $fontColorAction;
-      fill: $fontColorAction;
-      cursor: pointer;
-      transition: outline-color $transition, fill $transition,
-        cursor $transition;
-    }
   }
   &__buttons {
     justify-content: center;
     margin-bottom: 50px;
-
-    @include desktop {
-      justify-content: center;
-      margin-bottom: 50px;
-    }
   }
   &__buttons > .filter-item:not(:last-child) {
     margin-right: 8px;
-
-    @include desktop {
-      margin-right: 8px;
-    }
   }
 }

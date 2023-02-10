@@ -51,23 +51,12 @@
     @include tablet {
       text-align: none;
     }
-
-    @include desktop {
-      text-align: none;
-    }
   }
   &__info {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.48px;
     color: $fontColorSecondary;
-
-    @include desktop {
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.48px;
-      color: $fontColorSecondary;
-    }
   }
   &--shadow {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -82,16 +71,6 @@
     text-transform: capitalize;
     text-align: center;
     margin: 30px 99px 10px;
-
-    @include desktop {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.19;
-      letter-spacing: 0.48px;
-      text-transform: capitalize;
-      text-align: center;
-      margin: 30px 99px 10px;
-    }
   }
   &__subtitle {
     font-weight: 400;
@@ -102,16 +81,5 @@
     text-align: center;
     margin: 0 0 16px;
     color: $fontColorSecondary;
-
-    @include desktop {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.19;
-      letter-spacing: 0.48px;
-      text-transform: capitalize;
-      text-align: center;
-      margin: 0 0 16px;
-      color: $fontColorSecondary;
-    }
   }
 }

@@ -32,11 +32,9 @@ body {
   }
   &--mobile {
     display: none;
-    // visibility: hidden;
 
     @include desktop {
       display: block;
-      // visibility: visible;
     }
   }
   &__header {
@@ -109,6 +107,9 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+
+  @include tablet {
+  }
 
   @include desktop {
     // display: flex;

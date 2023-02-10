@@ -11,7 +11,7 @@
   text-align: center; //dodane
 
   @include tablet {
-    justify-content: space-between;
+    // justify-content: space-between;
     // display: flex;
   }
 
@@ -44,8 +44,10 @@
 .footer-box {
   margin-top: 60px;
 
-  @include desktop {
+  @include tablet {
     margin-top: 12px;
+  }
+  @include desktop {
   }
 
   &__title {
@@ -115,13 +117,17 @@
 .testflexzew {
   @include tablet {
     display: flex;
+    justify-content: space-between;
   }
   @include desktop {
   }
 }
-// .testflexwew {
-
-// }
+.testflexwew {
+  @include tablet {
+    padding-right: 144px;
+    margin-bottom: 48px;
+  }
+}
 .testflexwew:not(:last-child) {
   @include desktop {
     padding-right: 70px;

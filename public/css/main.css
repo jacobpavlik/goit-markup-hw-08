@@ -733,13 +733,6 @@ body {
           justify-content: center;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .footer-flex {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-flex {
     -webkit-box-pack: justify;
@@ -772,7 +765,7 @@ body {
 .footer-box {
   margin-top: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-box {
     margin-top: 12px;
   }
@@ -849,8 +842,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) {
+  .testflexwew {
+    padding-right: 144px;
+    margin-bottom: 48px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .testflexwew:not(:last-child) {
     padding-right: 70px;

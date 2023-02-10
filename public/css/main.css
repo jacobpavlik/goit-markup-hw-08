@@ -843,7 +843,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .testflexzew {
+  .footer-two-blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -853,14 +853,14 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .testflexwew {
+  .footer-one-block {
     padding-right: 144px;
     margin-bottom: 48px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .testflexwew:not(:last-child) {
+  .footer-one-block:not(:last-child) {
     padding-right: 70px;
   }
 }

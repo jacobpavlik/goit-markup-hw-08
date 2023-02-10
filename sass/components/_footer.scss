@@ -117,7 +117,7 @@
     }
   }
 }
-.testflexzew {
+.footer-two-blocks {
   @include tablet {
     display: flex;
     justify-content: space-between;
@@ -125,13 +125,13 @@
   @include desktop {
   }
 }
-.testflexwew {
+.footer-one-block {
   @include tablet {
     padding-right: 144px;
     margin-bottom: 48px;
   }
 }
-.testflexwew:not(:last-child) {
+.footer-one-block:not(:last-child) {
   @include desktop {
     padding-right: 70px;
   }

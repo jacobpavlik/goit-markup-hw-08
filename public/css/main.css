@@ -474,7 +474,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-slogan {
-    background-size: 768px;
+    padding: 110px 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -500,6 +500,11 @@ body {
 }
 .section-slogan--format {
   padding-top: 58px;
+}
+@media screen and (min-width: 768px) {
+  .section-slogan--format {
+    width: 365px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-slogan--format {

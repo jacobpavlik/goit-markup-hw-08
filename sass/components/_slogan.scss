@@ -11,7 +11,8 @@
   text-align: center;
 
   @include tablet {
-    background-size: 768px;
+    // background-size: cover;
+    padding: 110px 0;
   }
   @include desktop {
     height: 600px;
@@ -49,6 +50,10 @@
   &--format {
     padding-top: 58px;
     //TABLET jak mobile
+
+    @include tablet {
+      width: 365px;
+    }
 
     @include desktop {
       padding-top: 106px;

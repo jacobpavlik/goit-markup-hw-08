@@ -172,9 +172,9 @@ body {
     display: none;
   }
 }
-.menu-toggle:hover, .menu-toggle:focus {
+.menu-toggle .button-close__icon:hover, .menu-toggle .button-close__icon:focus {
   background-color: transparent;
-  color: #2196f3;
+  fill: #2196f3;
 }
 
 .menu-container {

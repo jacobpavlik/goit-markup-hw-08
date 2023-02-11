@@ -42,23 +42,14 @@
     }
   }
 
-  //DEL->sprawdzić czy działa - jak cała strona będzie!! Dopiero potem skasować
-  // & > .nav__item-header:not(:last-child) {
-  //   margin-right: 50px;
-  // }
-  // & > .nav__item-header:not(:last-child) {
-  //   margin-left: 315px;
-  // }
-
-  //DEL->sprawdzić czy działa - jak cała strona będzie!! Dopiero potem skasować
-  //przeniosłem niżej pod nav__link i działa!
-  //jak zmieniam & > .nav__link--active na &__link--active to napis "Active" gubi kolor
-  //   & > .nav__link--active {
-  //     color: $fontColorAction;
-  //   }
-  //   & > .nav__link--active-portfolio {
-  //     color: $fontColorAction;
-  //   }
+  &__item-header:not(:last-child) {
+    @include tablet {
+      margin-bottom: 10px;
+    }
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
   &__item {
     margin-right: 46px;
   }

@@ -499,6 +499,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .card__icon {
+    margin-top: 0;
     margin-bottom: 30px;
   }
 }

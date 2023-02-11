@@ -167,14 +167,12 @@ body {
   border: none;
   outline: none;
 }
-
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
+.menu-toggle:hover, .menu-toggle:focus {
   background-color: transparent;
   color: #2196f3;
 }
@@ -195,19 +193,16 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
   color: #212121;
 }
-
 .menu-container .menu-toggle:hover {
   color: #2196f3;
 }
@@ -219,14 +214,12 @@ body {
   padding-left: 8px;
   text-transform: capitalize;
 }
-
 .mobile-menu .nav__tel {
   font-size: 34px;
   color: #2196f3;
   margin-top: 270px;
   margin-bottom: 32px;
 }
-
 .mobile-menu .nav__media {
   color: #2196f3;
   font-size: 18px;
@@ -234,17 +227,14 @@ body {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
   padding: 0 10px;
 }
-
 .mobile-menu .nav__item {
   margin-bottom: 32px;
 }
-
 .mobile-menu .nav__media--borderless {
   border-left: none;
   padding: 0;
   padding-right: 10px;
 }
-
 .mobile-menu .nav__email {
   margin-bottom: 64px;
 }

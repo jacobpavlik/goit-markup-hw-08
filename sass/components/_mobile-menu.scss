@@ -64,18 +64,18 @@
   border: none;
   //   border-radius: 50%;
   outline: none;
-}
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
   }
-}
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: transparent;
-  color: $fontColorAction;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $fontColorAction;
+  }
 }
 
 .menu-container {
@@ -87,23 +87,22 @@
   padding: 32px;
   background-color: $backgroundColorPrimary;
   z-index: 999;
-
   transform: translateX(100%);
   transition: transform $transition;
-}
 
-.menu-container.is-open {
-  transform: translateX(0);
-}
+  &.is-open {
+    transform: translateX(0);
+  }
 
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: $fontColorPrimary;
-}
-.menu-container .menu-toggle:hover {
-  color: $fontColorAction;
+  & .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $fontColorPrimary;
+  }
+  & .menu-toggle:hover {
+    color: $fontColorAction;
+  }
 }
 
 .mobile-menu {
@@ -112,31 +111,31 @@
   list-style: none;
   padding-left: 8px;
   text-transform: capitalize;
-}
 
-.mobile-menu .nav__tel {
-  font-size: 34px;
-  color: $fontColorAction;
-  margin-top: 270px;
-  margin-bottom: 32px;
-}
+  & .nav__tel {
+    font-size: 34px;
+    color: $fontColorAction;
+    margin-top: 270px;
+    margin-bottom: 32px;
+  }
 
-.mobile-menu .nav__media {
-  color: $fontColorAction;
-  font-size: 18px;
-  line-height: 1.22;
-  border-left: 1px solid rgba(33, 33, 33, 0.2); //poprawić
-  padding: 0 10px; //poprawić
-}
+  & .nav__media {
+    color: $fontColorAction;
+    font-size: 18px;
+    line-height: 1.22;
+    border-left: 1px solid rgba(33, 33, 33, 0.2); //poprawić
+    padding: 0 10px; //poprawić
+  }
 
-.mobile-menu .nav__item {
-  margin-bottom: 32px;
-}
-.mobile-menu .nav__media--borderless {
-  border-left: none;
-  padding: 0;
-  padding-right: 10px;
-}
-.mobile-menu .nav__email {
-  margin-bottom: 64px;
+  & .nav__item {
+    margin-bottom: 32px;
+  }
+  & .nav__media--borderless {
+    border-left: none;
+    padding: 0;
+    padding-right: 10px;
+  }
+  & .nav__email {
+    margin-bottom: 64px;
+  }
 }

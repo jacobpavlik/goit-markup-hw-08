@@ -684,6 +684,7 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   display: block;
+  padding-top: 8px;
 }
 
 .footer-box {

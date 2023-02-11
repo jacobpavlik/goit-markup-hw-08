@@ -213,6 +213,7 @@ body {
   list-style: none;
   padding-left: 8px;
   text-transform: capitalize;
+  font-weight: 500;
 }
 .mobile-menu .nav__tel {
   font-size: 34px;

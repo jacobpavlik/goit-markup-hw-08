@@ -782,7 +782,6 @@ body {
     margin-bottom: 48px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .footer-one-block:not(:last-child) {
     padding-right: 70px;

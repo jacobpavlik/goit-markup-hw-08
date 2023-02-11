@@ -130,9 +130,10 @@
     padding-right: 144px;
     margin-bottom: 48px;
   }
-}
-.footer-one-block:not(:last-child) {
-  @include desktop {
-    padding-right: 70px;
+
+  &:not(:last-child) {
+    @include desktop {
+      padding-right: 70px;
+    }
   }
 }

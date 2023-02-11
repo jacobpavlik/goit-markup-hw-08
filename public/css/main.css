@@ -1032,7 +1032,7 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-goods .overlay, .card-goods__overlay {
+.card-goods__overlay {
   background-color: #2196f3;
   width: 100%;
   display: -webkit-box;

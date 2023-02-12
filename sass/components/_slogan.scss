@@ -2,9 +2,14 @@
   padding: 10px 41px 10px 42px;
 }
 .section-slogan {
-  // height: 400px;
-  background-image: url("../images/img-overlay.png"),
-    url("../images/img-bg.png");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(.../images);
+  }
+
+  // background-image: url("../images/img-overlay.png"),
+  //   url("../images/img-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -437,11 +437,16 @@ body {
 }
 
 .section-slogan {
-  background-image: url("../images/img-overlay.png"), url("../images/img-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-slogan {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(.../images);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.../images);
+  }
 }
 @media screen and (min-width: 768px) {
   .section-slogan {

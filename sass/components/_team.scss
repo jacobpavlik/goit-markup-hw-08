@@ -19,13 +19,11 @@
     height: 44px;
     padding: 12px;
     border-radius: 50px;
-    // margin-bottom: 24px;
 
     @include desktop {
       margin-bottom: 0;
     }
   }
-  //tylko dla MOBILE
   &__card:not(:last-child) {
     margin-right: 10px;
 

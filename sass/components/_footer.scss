@@ -4,21 +4,13 @@
 }
 .footer-flex {
   display: flex;
-  // flex-direction: column; //flex-wrap lepsze, bo ustawia od razu wszystko
-  flex-wrap: wrap; //dodane
-  // gap: 30px; //dodane
-  justify-content: center; //zmienione
-  text-align: center; //dodane
-
-  @include tablet {
-    // justify-content: space-between;
-    // display: flex;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 
   @include desktop {
     justify-content: space-between;
-    text-align: left; //dodane przez MOBILE
-    // flex-wrap: nowrap; //dodane przez MOBILE
+    text-align: left;
   }
 }
 .contact {
@@ -91,10 +83,6 @@
     transition: background-color $transition, cursor $transition;
   }
   &__form {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
     @include desktop {
       display: flex;
       align-items: center;
@@ -113,8 +101,8 @@
 
     @include desktop {
       padding: 15px 150px 15px 16px;
-      margin-right: 12px; //przesunięte z MOBILE
-      width: 358px; //dodane
+      margin-right: 12px;
+      width: 358px;
     }
   }
 }

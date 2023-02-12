@@ -72,14 +72,12 @@
       line-height: 1.14;
     }
 
-    //
     &--active {
       color: $fontColorAction;
     }
     &--active-portfolio {
       color: $fontColorAction;
     }
-    //
 
     &:focus,
     &:hover {
@@ -122,8 +120,6 @@
   }
 }
 .contact__nav {
-  //dodano TABLET
-  // display: flex;
   flex-direction: column;
   align-items: flex-start;
 

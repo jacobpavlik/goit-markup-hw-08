@@ -1,6 +1,5 @@
 .card {
   background-color: $backgroundColorPrimary;
-  //dodane do mobile
   margin: 0 15px;
 
   @include tablet {
@@ -18,12 +17,7 @@
     background-color: $backgroundColorEmployees;
     margin: 30px 0;
 
-    @include tablet {
-    }
-
     @include desktop {
-      //dodaję po zmianie w index width:270px na 100%
-      // width: 270px;
       margin-top: 0;
     }
   }
@@ -45,7 +39,6 @@
     line-height: 1.17;
     text-transform: uppercase;
     margin-bottom: 10px;
-    //dodane do mobile
     text-align: center;
 
     @include tablet {

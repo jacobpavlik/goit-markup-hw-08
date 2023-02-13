@@ -192,10 +192,12 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
 }
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  display: block;
 }
 .menu-container .menu-toggle {
   position: absolute;

@@ -35,9 +35,11 @@
   z-index: 999;
   transform: translateX(100%);
   transition: transform $transition;
+  display: none;
 
   &.is-open {
     transform: translateX(0);
+    display: block;
   }
 
   & .menu-toggle {

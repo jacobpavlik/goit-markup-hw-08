@@ -865,6 +865,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
 }
 .button-close__icon {
   fill: #000000;

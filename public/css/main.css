@@ -999,6 +999,9 @@ body {
     line-height: 1.71;
   }
 }
+.box-rules__label::first-letter {
+  text-transform: uppercase;
+}
 .box-rules__label::before {
   display: block;
   position: absolute;

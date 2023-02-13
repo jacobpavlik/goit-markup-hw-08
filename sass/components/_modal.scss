@@ -137,10 +137,14 @@
     line-height: 1.17;
     letter-spacing: 0.48px;
     color: $fontColorSecondary;
+
     @include desktop {
       font-size: 14px;
       line-height: 1.71;
     }
+  }
+  &__label::first-letter {
+    text-transform: uppercase;
   }
 
   &__label::before {

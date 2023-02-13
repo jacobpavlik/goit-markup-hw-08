@@ -22,9 +22,6 @@
     }
   }
   &__img {
-    width: 450px;
-    height: 460px;
-
     @include tablet {
       width: 354px;
       height: 374px;

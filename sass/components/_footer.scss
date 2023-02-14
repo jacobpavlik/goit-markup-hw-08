@@ -101,6 +101,9 @@
       width: 358px;
     }
   }
+  &__input:focus {
+    outline: 1px solid $fontColorAction;
+  }
 }
 .footer-two-blocks {
   @include tablet {
